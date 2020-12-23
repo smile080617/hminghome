@@ -1,0 +1,86 @@
+body{
+	margin:0px;font-size:20px;
+    font-family:arial, sans-serif;
+    
+}
+/* nav */
+nav{
+	height:900px;
+	background-image:url(bg.jpg);
+	background-size:cover;
+	background-attachment:fixed;
+}
+nav>.title{
+	text-align:center;font-size:2em;
+	font-family:"Dancing Script", cursive;
+	padding:40px 0px;margin-bottom:80px;
+}
+nav>.menu{
+	display:flex;justify-content:center;
+	margin-bottom:250px;
+}
+nav>.menu>.item{
+	font-size:0.8em;margin:0px 40px;color:#222222;
+	text-shadow:0px 0px 5px #ffffff;
+	transition:transform 0.5s;cursor: pointer;
+}
+nav>.menu>.item:hover{
+	color:#000000 ; transform:scale(1.05,1.05)
+}
+nav>.memo{
+	text-align:center;
+	font-size:3em;letter-spacing:3px;
+	line-height:1.25em;
+
+}
+nav>.mobile-menu{
+		position:fixed;left:0px;top:0px;
+		width:100%;height:100%;	
+		background-color: rgba(255,255,255,0.9);
+		text-align:center;
+		display:none;
+}	
+nav>.mobile-menu>.item{
+	font-size: 0.8em; color:#222222;
+	padding-top:30px;
+	cursor:pointer;
+	transition:transform 0.5s;
+}
+nav>.mobile-menu>.item:hover{
+	color:#000000 ; transform:scale(1.05,1.05)
+}
+nav>.mobile-menu>.close{
+	position:absolute; top:10px; right:10px;
+	cursor:pointer; /*改變滑鼠樣態*/
+}
+nav>.mobile-menu-trigger{
+	display:none;justify-content:center;
+	margin-bottom: 100px;
+}
+nav>.mobile-menu-trigger>.lines{
+	width:40px;
+}
+nav>.mobile-menu-trigger>.lines>.line{
+ height: 2px;
+ background-color:#000000;
+ margin:8px 0px;
+}	
+@media (max-width:800px){
+	nav{
+		height: 600px;
+		background-position: 20% center;
+	}
+	nav>.title{
+		padding:25px 0px ;margin-bottom:40px;
+	}
+	nav>.menu{
+		display:none;
+	}
+	nav>.mobile-menu-trigger{
+		display:flex;
+	}
+	nav>.memo{
+		font-size:2em;
+		}
+    
+}

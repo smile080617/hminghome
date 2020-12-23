@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="view port" content="width=device-width, initial-scal=1, maxium-scal=1">
+    <title>Fashion DIary</title>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="nav.css" />
+    <link rel="stylesheet" type="text/css" href="gallery.css" />
+    <link rel="stylesheet" type="text/css" href="article.css" />
+</head>
+<body>
+    <nav>
+		<div class="title">Fashion Diary</div>
+		<div class="menu">
+			<div class="item">Home</div>
+			<div class="item">About</div>
+			<div class="item">Blog</div>
+			<div class="item">Contact</div>
+		</div>
+		<div id="mobile-menu" class="mobile-menu">
+			<div class="item">Home</div>
+			<div class="item">About</div>
+			<div class="item">Blog</div>
+			<div class="item">Contact</div>
+			<div onclick="closeMobileMenu();" class="close">x</div>
+		</div>
+		<div onclick="showMobileMenu();" class="mobile-menu-trigger">
+			<div class="lines">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+		</div>
+
+		<div class="memo">STYLE IS A<br/>CHOICE.<br/>MAKE YOURS.</div>
+	</nav>
+	<section class="gallery">
+		<div class="col">
+			<div class="block picture picture-1">
+				<div class="words">
+					<div class="title">Read</div>
+					<div class="story">THE BLOG</div>
+					<div class="action">
+						<span class="btn">Read More</span>
+					</div>
+				</div>
+			</div>
+			<div class="block text">
+				<div class="words">
+					<div class="title">Hello</div>
+					<div class="story">I'm PengPeng</div>
+					<div class="action">
+						<span class="btn">Read More</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="block text">
+				<div class="words">
+					<div class="title">Advertise with</div>
+					<div class="story">Fashion Diva</div>
+					<div class="action">
+						<span class="btn">Read More</span>
+					</div>
+				</div>
+			</div>
+			<div class="block picture picture-2">
+				<div class="words">
+					<div class="title">Contribute</div>
+					<div class="story">TO THE BLOG</div>
+					<div class="action">
+						<span class="btn">Read More</span>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+      <section class="article">
+        
+        <div class="col ">
+            <div class="block picture picture-1"></div>
+            <div class="block text">
+                <div class="title">What I Wore:Travel Edition</div>
+                <div class="mine">creat a blog post that summarizes your post in a few short,puncy sentences your audience to continute reading. wel...</div>   
+                <hr>         
+                <div class="tail">85viwes    write a comment</div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="block picture picture-2"></div>
+            <div class="block text">
+                <div class="title">What I Wore:Travel Edition</div>
+                <div class="mine">creat a blog post that summarizes your post in a few short,puncy sentences your audience to continute reading. wel...</div>   
+                <hr>         
+                <div class="tail">
+                    85viwes    write a comment
+                    </div>
+            </div>
+        </div>
+        
+      </section>
+      <footer>
+		&copy; 2021 by PengPeng and Xuemi.
+	</footer>
+	<script src="main.js"></script>
+</body>
+</html>

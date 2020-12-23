@@ -1,0 +1,76 @@
+section.article{    
+    width:100%;
+    Justify-content: center;
+        }
+
+section.article>.col{ 
+ box-sizing:border-box;
+ display:flex; 
+ margin: 40px auto;
+ width:950px;
+ height:320px;
+ border:1px solid #000000;
+ 
+}
+
+/*section.article.picture*/
+section.article>.col>.picture{ 
+    width:100%; height:100%;
+    text-align:left;color: #ffffff;
+    opacity: 0.8;
+    transition:opacity 0.5s;   
+}
+section.article>.col>.picture:hover{
+    opacity: 1.0;
+} 
+section.article>.col>.picture-1{
+    background-image:url(article-1.jpg);
+    background-size:cover;
+} 
+section.article>.col>.picture-2{
+    background-image:url(article-2.jpg);
+    background-size:cover;
+} 
+/*section.article.text*/
+section.article>.col>.text{      
+    text-align:left ;color: #000000;
+    margin:20px;
+}
+section.article>.col>.text>.title{   
+    font-size:2em;font-weight:bold ;
+    margin-bottom: 30px;
+}
+section.article>.col>.text>.mine{
+    vertical-align: middle;
+    height:120px;
+    font-size:0.8em;color:#7a7878;;
+}
+section.article>.col>.text>.tail{
+    vertical-align: bottom;
+    font-size:0.8em;color:#7a7878;
+    
+}
+@media (max-width:800px){    
+    Section.article>.col>.text{  
+        font-size: 0.8em; 
+        height:90%;
+        margin:15px;
+    }
+    section.article>.col>.text>.title{ 
+        margin-bottom: 10px;
+    }
+    section.article>.col>.text>.mine{
+        height:60PX;
+    }
+    section.article>.col>.picture{ 
+        width:100%; height:250px;      
+    }
+
+    section.article>.col{ 
+        flex-wrap:wrap; 
+        margin: 40px auto;
+        width:90%;
+        height:100%;               
+       }
+       
+}
